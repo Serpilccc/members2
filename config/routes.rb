@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'static_pages/home'
   get  '/signup',  to: 'users#new'
+  get '/lps',    to: 'static_pages#lps', as: :lps
 
   resources :users
 
